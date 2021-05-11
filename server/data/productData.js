@@ -1,4 +1,4 @@
-const products = [
+const productData = [
   {
     name: "PlayStation 5",
     imageUrl:
@@ -55,4 +55,4 @@ const products = [
   },
 ];
 
-module.exports = products;
+module.exports = productData;
