@@ -1,7 +1,11 @@
 .cart_prduct {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
+}
+.cart_prduct .card-img-top {
+  width: 100%;
+  height: 200px !important;
 }
 .cart_prduct .card-body .card-title {
   font-size: 15px !important;

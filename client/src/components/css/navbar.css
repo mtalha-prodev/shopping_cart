@@ -71,6 +71,16 @@
   color: #dd129e;
 }
 
+.over_layour {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #17171752;
+  z-index: 99;
+}
+
 @media (max-width: 768px) {
   .navbar__hamburger {
     display: block;

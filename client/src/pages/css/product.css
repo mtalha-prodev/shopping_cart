@@ -1,0 +1,43 @@
+p {
+  margin: 0;
+}
+.card-body {
+  background-color: #fff;
+  padding: 0 !important;
+}
+.price,
+.card-title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  font-size: 14px;
+}
+.product,
+.price span {
+  font-weight: 700;
+}
+.card-text {
+  font-size: 13px;
+  padding: 10px;
+}
+
+.qty__price {
+  font-weight: 700;
+}
+select {
+  width: 70px;
+}
+
+.btn-default {
+  background-color: #f4f4f4;
+  color: #171717;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+  padding: 5px !important;
+  font-size: 15px;
+  margin: 15px;
+}
+
+.btn-default:hover {
+  background-color: #171717;
+  color: #f4f4f4;
+}

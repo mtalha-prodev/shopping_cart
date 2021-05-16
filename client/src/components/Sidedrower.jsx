@@ -1,12 +1,12 @@
 import "./css/sidedrower.css";
 import { Link } from "react-router-dom";
 
-function Sidedrower() {
+function Sidedrower({ sideBar__remove }) {
   return (
     <div>
       <ul className="side__bar">
         <li>
-          <Link to="/cart" className="cart__link">
+          <Link to="/cart" className="cart__link" onClick={sideBar__remove}>
             <i class="fas fa-cart-arrow-down"></i>
             <span>
               Cart
@@ -15,7 +15,9 @@ function Sidedrower() {
           </Link>
         </li>
         <li>
-          <Link to="/">Shop</Link>
+          <Link to="/" onClick={sideBar__remove}>
+            Shop
+          </Link>
         </li>
       </ul>
     </div>

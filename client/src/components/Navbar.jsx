@@ -8,12 +8,24 @@ function Navbar() {
 
   useEffect(() => {}, []);
 
+  const sideBar__remove = () => {
+    setSideBar(!sideBar);
+  };
+
   return (
     <nav className="navbar__menu">
       <div className="navbar__logo">
         <h2>Shopping Cart</h2>
       </div>
-      {sideBar ? <Sidedrower /> : null}
+      {sideBar ? (
+        <div>
+          <Sidedrower sideBar__remove={sideBar__remove} />
+          <div
+            className="over_layour"
+            onClick={() => setSideBar(!sideBar)}
+          ></div>
+        </div>
+      ) : null}
 
       <div className="navbar__hamburger" onClick={() => setSideBar(!sideBar)}>
         <i class="fas fa-bars"></i>
