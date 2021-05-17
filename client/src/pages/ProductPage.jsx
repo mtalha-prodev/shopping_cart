@@ -44,8 +44,8 @@ function ProductPage({ match, history }) {
                   Price: <span>${product.price}</span>
                 </p>
                 <p className="card-text">
-                  <span style={{ fontWeight: "bold" }}>Description:</span>{" "}
-                  {product.description.substring(0, 200)}...
+                  <span style={{ fontWeight: "bold" }}>Description:</span>
+                  {product.description}
                 </p>
               </div>
             </div>

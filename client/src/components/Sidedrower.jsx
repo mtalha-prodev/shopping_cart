@@ -1,7 +1,7 @@
 import "./css/sidedrower.css";
 import { Link } from "react-router-dom";
 
-function Sidedrower({ sideBar__remove }) {
+function Sidedrower({ sideBar__remove, getCountCart }) {
   return (
     <div>
       <ul className="side__bar">
@@ -10,7 +10,7 @@ function Sidedrower({ sideBar__remove }) {
             <i class="fas fa-cart-arrow-down"></i>
             <span>
               Cart
-              <span className="cart__badge">0</span>
+              <span className="cart__badge">{getCountCart()}</span>
             </span>
           </Link>
         </li>

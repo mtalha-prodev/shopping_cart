@@ -13,6 +13,24 @@ const reducer = combineReducers({
   productDetails: productDetailReducer,
 });
 
-const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)));
+// save to localStorage cart user add to cart
+
+const cartFromLocalStorage = localStorage.getItem("cart")
+  ? JSON.parse(localStorage.getItem("cart"))
+  : [];
+
+// and save in cartItems to cartReducer
+
+const INITIAL_STATE = {
+  cart: {
+    cartItems: cartFromLocalStorage,
+  },
+};
+
+const store = createStore(
+  reducer,
+  INITIAL_STATE,
+  composeWithDevTools(applyMiddleware(thunk))
+);
 
 export default store;
